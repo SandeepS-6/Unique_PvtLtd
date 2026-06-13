@@ -3,7 +3,7 @@ services:
     name: unique-agency
     runtime: node
     plan: free
-    buildCommand: NPM_CONFIG_PRODUCTION=false npm install && npm run build
+    buildCommand: npm run render-build
     startCommand: bash start.sh
     envVars:
       - key: NODE_VERSION
