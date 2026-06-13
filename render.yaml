@@ -4,7 +4,7 @@ services:
     runtime: node
     plan: free
     buildCommand: NPM_CONFIG_PRODUCTION=false npm install && npm run build
-    startCommand: npm start
+    startCommand: bash start.sh
     envVars:
       - key: NODE_VERSION
         value: 20.11.0
