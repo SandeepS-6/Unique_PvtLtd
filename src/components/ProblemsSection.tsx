@@ -77,7 +77,7 @@ export default function ProblemsSection() {
             >
               <div className="relative aspect-[16/10] overflow-hidden rounded-3xl md:aspect-[5/3]">
                 <Image
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df992?w=800&q=80&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80&auto=format&fit=crop"
                   alt="Developer working at a desk"
                   fill
                   className="object-cover grayscale"
