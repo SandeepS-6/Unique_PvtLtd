@@ -6,7 +6,8 @@
     "dev": "next dev",
     "prebuild": "npm install",
     "build": "next build",
-    "start": "next start -H 0.0.0.0",
+    "postbuild": "node scripts/prepare-standalone.js",
+    "start": "node .next/standalone/server.js",
     "lint": "eslint"
   },
   "engines": {

@@ -3,12 +3,14 @@ services:
     name: unique-agency
     runtime: node
     plan: free
-    buildCommand: npm install && npm run build
+    buildCommand: NPM_CONFIG_PRODUCTION=false npm install && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_VERSION
         value: 20.11.0
-      - key: NPM_CONFIG_PRODUCTION
-        value: "false"
+      - key: NODE_ENV
+        value: production
+      - key: HOSTNAME
+        value: "0.0.0.0"
       - key: NEXT_PUBLIC_SITE_URL
-        sync: false
+        value: https://unique-pvtltd.onrender.com
